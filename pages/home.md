@@ -1,42 +1,58 @@
 ---
 header_text: play-test
 subtitle: Professional inflatable play equipment inspection management
+meta_description: Open source safety inspection logging for inflatable play
+  equipment. Compliant with BS EN 14960:2019. Multi-company support, PDF
+  reports, and comprehensive assessment tools.
 meta_title: play-test - Open Source BS EN 14960:2019 Inspection Software
-meta_description: Open source safety inspection logging for inflatable play equipment. Compliant with BS EN 14960:2019. Multi-company support, PDF reports, and comprehensive assessment tools.
-permalink: /
-layout: home
 eleventyNavigation:
   key: Home
   order: 1
+layout: home
+permalink: /
 ---
+**Play-Test is an online test database for play equipment. Users can store inspections to the BS EN 14960 standard and share PDF reports for units or inspections.**
 
-<!-- WRITE: Homepage hero content and introduction -->
+The platform is **open source and available to all** ([here's the source code on Github](https://github.com/chobbledotcom/play-test)). Its development processes are collaborative, transparent, and independent.
 
-## Content to write:
+The lead developer is [Stefan from Chobble.com](https://chobble.com), formerly a developer at [The Bouncy Castle Network](https://www.bouncycastlenetwork.com) and [Bandcamp.com](https://bandcamp.com).
 
-- Opening paragraph: What is play-test? (1-2 sentences, punchy)
-- Key value proposition: Open source, standards-compliant, practical
-- Quick stats/highlights:
-  - 90%+ test coverage
-  - 7 assessment types
-  - Multi-company support
-  - Live at play-test.co.uk
-  - RPII-sponsored
-  - AGPLv3 licensed
-- Brief mention of who it's for (inspectors, companies, industry)
-- Call to action: Try the demo, get started, view on GitHub
+## Public instances
 
-## Visual elements to include:
+You can register for **Chobble's hosted instance** of Play-Test at [play-test.co.uk/register](https://play-test.co.uk/register/). This version costs **£5 per month for unlimited test hosting**, payable to Chobble.
 
-- Hero image: Screenshot of the main dashboard or inspection interface
-- Quick feature highlights (icons or small screenshots)
-- Live demo button/link to play-test.co.uk
-- GitHub link with star count
-- Sponsor logos (RPII, Chobble)
+If you're an RPII inspector, you can contact them to register for their hosted instance - public URL coming soon!
 
-## Note:
+## User features
 
-The homepage will automatically show:
-- Featured products/features (from the products collection)
-- Latest news (from the news collection)
-These are controlled by _data/homepage.json
+Play-Test is simple to use with a clear and obvious interface. Its main user-facing features are:
+
+- BS EN 14960 inspection logging
+- PDF reports and sharing
+- User login and password resets
+- CSV exports
+- Image uploads
+
+## Admin features
+
+Admin users are granted a few more abilities:
+
+- Approve user accounts
+- Reset passwords
+- Replace text strings
+- View all units
+- View all uploads
+- Impersonate users
+- Create badges / batches of batches
+
+## Technical features
+
+The platform has been designed to be very scalable and easy to develop on. It's a Ruby on Rails app using a sqlite database which means its code is very straightforward, plus niceties like:
+
+- S3 uploads
+- Docker containerisation
+- Nix Flake for repoducible dev environments
+- Sorbet type checking
+- [90%+ test coverage](https://coverage.play-test.co.uk)
+- Capybara tests
+- Simple federation via cross-search capabilities
