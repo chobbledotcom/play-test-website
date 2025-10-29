@@ -1,7 +1,8 @@
 {
-	"name": "",
-	"url": "https://example.chobble.com",
+	"name": "play-test",
+	"url": "https://play-test.co.uk",
 	"socials": {
+		"Github": "https://github.com/chobbledotcom/play-test",
 		"Facebook": null,
 		"Instagram": null,
 		"TikTok": null,
