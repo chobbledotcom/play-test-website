@@ -1,6 +1,9 @@
 ---
 name: Right Column
 ---
+- **Source Code:** [github.com/chobbledotcom/play-test](https://github.com/chobbledotcom/play-test/)
+- **Main instance:** [play-test.co.uk](https://play-test.co.uk)
+
 ![Play-Test logo](/images/logo.svg)
 
 ## Support Play-Test's Development
