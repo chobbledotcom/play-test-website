@@ -23,3 +23,9 @@
   --form-button-border: 2px solid #58648c;
   --form-button-hover-border: 2px solid #613583;
 }
+
+body > footer .socials li a img,
+body > footer .socials li a:hover img {
+  filter: invert(24%) sepia(32%) saturate(1656%) hue-rotate(237deg)
+    brightness(93%) contrast(93%) !important;
+}
