@@ -17,6 +17,8 @@ The platform is **open source and available to all** ([here's the source code on
 
 The lead developer is [Stefan from Chobble.com](https://chobble.com), formerly a developer at [The Bouncy Castle Network](https://www.bouncycastlenetwork.com) and [Bandcamp.com](https://bandcamp.com).
 
+![Screenshot of the Play-Test system in the process of editing an inspection](/images/screenshot.png)
+
 ## Public instances
 
 You can register for **Chobble's hosted instance** of Play-Test at [play-test.co.uk/register](https://play-test.co.uk/register/). This version costs **£5 per month for unlimited test hosting**, payable to Chobble.
