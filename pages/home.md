@@ -1,5 +1,5 @@
 ---
-header_text: play-test
+header_text: Play-Test - online test database for inflatable play equipment
 subtitle: Professional inflatable play equipment inspection management
 meta_description: Open source safety inspection logging for inflatable play
   equipment. Compliant with BS EN 14960:2019. Multi-company support, PDF
