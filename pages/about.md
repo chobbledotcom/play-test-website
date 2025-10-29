@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 2
 permalink: /about/
 ---
-## What is play-test?
+## What is Play-Test?
 
 Play-Test is a web platform for logging inspections of play equipment like bouncy castles, slides, or obstacle courses.
 
