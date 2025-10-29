@@ -66,29 +66,10 @@ jobs:
             's/"botpoison_public_key": null/"botpoison_public_key": "${{ secrets.BOTPOISON_PUBLIC_KEY }}"/g' \
             "combined/src/_data/config.json"
 
-      - name: Upload combined directory
-        uses: actions/upload-artifact@v4
-        with:
-          name: combined-files
-          path: combined/
-          retention-days: 1
-          include-hidden-files: true
-
-  build:
-    name: Build Site
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download combined directory
-        uses: actions/download-artifact@v4
-        with:
-          name: combined-files
-          path: combined
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 23
+          node-version: 24
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -108,30 +89,17 @@ jobs:
           mkdir -p ../_site
           mv _site/* ../_site/
 
-      - name: Set deployment environment
-        id: deployment_env
-        run: |
-          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
-            echo "storage_zone_name=${{ secrets.BUNNY_PRODUCTION_STORAGE_ZONE_NAME }}" >> $GITHUB_OUTPUT
-            echo "storage_zone_password=${{ secrets.BUNNY_PRODUCTION_STORAGE_ZONE_PASSWORD }}" >> $GITHUB_OUTPUT
-            echo "pull_zone_id_deploy=${{ secrets.BUNNY_PRODUCTION_PULL_ZONE_ID }}" >> $GITHUB_OUTPUT
-          else
-            echo "storage_zone_name=${{ secrets.BUNNY_STAGING_STORAGE_ZONE_NAME }}" >> $GITHUB_OUTPUT
-            echo "storage_zone_password=${{ secrets.BUNNY_STAGING_STORAGE_ZONE_PASSWORD }}" >> $GITHUB_OUTPUT
-            echo "pull_zone_id_deploy=${{ secrets.BUNNY_STAGING_PULL_ZONE_ID }}" >> $GITHUB_OUTPUT
-          fi
-
       - name: Deploy to Bunny
         uses: R-J-dev/bunny-deploy@v2.0.6
         with:
           access-key: ${{ secrets.BUNNY_ACCESS_KEY }}
           directory-to-upload: _site
           storage-endpoint: "https://storage.bunnycdn.com"
-          storage-zone-name: ${{ steps.deployment_env.outputs.storage_zone_name }}
-          storage-zone-password: ${{ steps.deployment_env.outputs.storage_zone_password }}
+          storage-zone-name: "play-test-site"
+          storage-zone-password: ${{ secrets.BUNNY_STORAGE_ZONE_PASSWORD }}
           concurrency: "5"
           enable-delete-action: true
           enable-purge-pull-zone: true
-          pull-zone-id: ${{ steps.deployment_env.outputs.pull_zone_id_deploy }}
+          pull-zone-id: 4725320
           replication-timeout: "15000"
 
