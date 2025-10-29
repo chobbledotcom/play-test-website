@@ -9,8 +9,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  setup:
-    name: Merge Repos
+  build:
+    name: Build & Deploy to Bunny CDN
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this repo
