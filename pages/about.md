@@ -1,5 +1,5 @@
 ---
-header_text: About the Play-Test BS EN 14960 test / inspection database system
+header_text: About the Play-Test BS EN 14960 inspection database
 subtitle: Open source inspection management for the play equipment industry
 meta_description: Learn about the play-test project, its open source philosophy,
   and RPII sponsorship
@@ -9,9 +9,8 @@ eleventyNavigation:
   order: 2
 permalink: /about/
 ---
-## What is Play-Test?
 
-Play-Test is a web platform for logging inspections of play equipment like bouncy castles, slides, or obstacle courses.
+**Play-Test is a web platform for logging inspections of play equipment like bouncy castles, slides, or obstacle courses.**
 
 These units are commonly tested against the **BS EN 14960** specification, and that's the specification that Play-Test tries to fit to.
 
@@ -22,7 +21,7 @@ There are many ways that bouncy castle inspectors might currently log their work
 - Using their own custom web solutions like Google Spreadsheets
 - Offline with pen and paper
 
-These all have their merits, but none are open, transparent system that anyone can use or help improve regardless of which trade bodies they belong to or web platforms they use.
+These all have their merits, but none are open, transparent systems that anyone can use or help improve regardless of which trade bodies they belong to or web platforms they use.
 
 ### Who is building it?
 
