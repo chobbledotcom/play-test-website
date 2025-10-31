@@ -1,91 +1,34 @@
 ---
 header_text: For Developers
 subtitle: Technical documentation and contribution guide
-meta_title: Developer Documentation - play-test
-meta_description: Technical information for developers who want to contribute to or deploy play-test
+meta_title: Developer Documentation - Play-Test
+meta_description: Technical information for developers who want to contribute to or deploy the Play-Test inspection system
 permalink: /developers/
 eleventyNavigation:
   key: Developers
   order: 6
 ---
 
-<!-- WRITE: Developer-focused page -->
+**The Play-Test system is designed to be easy for developers to get stuck into.**
 
-## Content to write:
+Its tech stack is nothing unusual - it's a **Ruby on Rails** app using very straightforward tools like **Rspec** and **Capybara** for testing, deployed using a **Docker container**.
 
-### Tech Stack
+Ruby (and Rails) is really easy to read and understand - the only thing that makes the codebase a bit messier is the use of **Sorbet** type signatures, which I'm not 100% sold on.
 
-- Rails 8.0+
-- Ruby 3.0+
-- SQLite database
-- RSpec & Capybara testing
-- Semantic HTML + MVP.css
-- Turbo for progressive enhancement
-- Minimal dependencies philosophy
+## Build process
 
-### Architecture Overview
+The development so far has been all my (Stefan from Chobble) work, supplemented by LLM code generators. Every line of code is reviewed and checked - although I'm less fussy about code tidiness in tests.
 
-- Model structure (Inspections, Units, Assessments, Companies, Users)
-- Assessment types and how they work
-- PDF generation and caching
-- Photo storage with Active Storage
-- ID generation system (badges)
+If you want to get stuck in, the existing tests and checkers should be pretty good at letting you know when your code isn't sticking to the house style.
 
-### Test Coverage
+## Reporting bugs
 
-- Currently 90%+ line and branch coverage
-- Link to coverage.play-test.co.uk
-- Testing philosophy
-- How to run tests
-- How to contribute tests
+If you get the system up and running you'll find a feedback link on the admin side where you can report bugs. Or you can contact Chobble. Or leave a Github issue - all are fine!
 
-### Development Setup
+## Links & Resources
 
-Link to detailed setup instructions in GitHub:
-- Nix flake (recommended)
-- Docker development environment
-- Traditional Ruby/Rails setup
-- Environment variables needed
-- Database setup
-
-### Contributing
-
-- How to fork and clone
-- Development workflow
-- Code standards (StandardRB)
-- Test requirements
-- Pull request process
-- CLAUDE.md file guidance
-
-### Code Style & Philosophy
-
-- Semantic HTML only (no CSS classes)
-- Progressive enhancement
-- Internationalisation (all strings via i18n)
-- Modern Ruby syntax
-- No defensive coding
-- Test-driven development
-
-### Deployment
-
-- Docker images
-- Environment variables
-- S3/object storage for PDFs (optional)
-- PDF caching configuration
-- Nix deployment
-
-### Links & Resources
-
-- GitHub: github.com/chobbledotcom/play-test
-- Docker Hub: dockerstefn/play-test
-- Coverage: coverage.play-test.co.uk
-- Live demo: play-test.co.uk
-- Issues: GitHub issues
+- GitHub: [github.com/chobbledotcom/play-test](https://github.com/chobbledotcom/play-test/)
+- Docker Hub: [dockerstefn/play-test](https://dockerhub.com/dockerstefn/play-test)
+- Coverage: [coverage.play-test.co.uk](https://coverage.play-test.co.uk)
+- Chobble's hosted instance: [play-test.co.uk](https://play-test.co.uk)
 - License: AGPLv3
-
-## Screenshot suggestions:
-
-- Code screenshot showing Ruby/Rails code
-- Screenshot of test coverage report
-- Screenshot of GitHub repository
-- Architecture diagram (if available)

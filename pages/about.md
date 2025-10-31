@@ -10,7 +10,9 @@ eleventyNavigation:
 permalink: /about/
 ---
 
-**Play-Test is a web platform for logging inspections of play equipment like bouncy castles, slides, or obstacle courses.**
+**Play-Test is open source, community driven, expandable, and easy to use.**
+
+At present, it is a web platform for logging inspections of play equipment like bouncy castles, slides, or obstacle courses.
 
 These units are commonly tested against the **BS EN 14960** specification, and that's the specification that Play-Test tries to fit to.
 
