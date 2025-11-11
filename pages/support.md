@@ -9,77 +9,32 @@ eleventyNavigation:
   order: 7
 ---
 
-<!-- WRITE: Support page content -->
+**Play-Test needs your support.** Launching new software is a daunting task, especially when there are established players in the market, and when you're a solo developer, and when you're building an open-source project.
 
-## Content to write:
+## If you can spare some cash
 
-### Getting Help
-
-#### Documentation
-
-- Link to GitHub repository README
-- Link to CLAUDE.md (developer guide)
-- Link to inline documentation in the app
-- Any other documentation resources
-
-#### Community Support
-
-- GitHub Issues for bug reports
-- GitHub Discussions for questions
-- How to write a good bug report
-- How to request features
-
-#### Commercial Support
-
-- Mention Chobble's availability for:
-  - Custom deployments
-  - Training
-  - Feature development
-  - Integration work
-- Link to contact information
-
-### Supporting the Project
-
-#### Sponsorship Options
+You can donate to Chobble in the name of Play-Test's development through any of the links below:
 
 - **OpenCollective**: opencollective.com/play-test
 - **LiberaPay**: liberapay.com/chobble
 - **Patreon**: patreon.com/c/Chobble
 
-#### Why Sponsor?
+## If you want to pay to use the platform
 
-- Keeps development active
-- Prioritises features you need
-- Supports open source infrastructure
-- Benefits the entire industry
-- Tax-deductible (depending on jurisdiction)
+You can [contact Chobble](https://chobble.com/chobble/) to pay for an account on the Chobble instance of Play-Test, at [play-test.co.uk](https://play-test.co.uk). Prices are **£5/month for unlimited inspections**, paid annually.
 
-#### Other Ways to Contribute
+You can also pay Chobble to host a full private instance for you or your team, at **£200 per month** for unlimited users, inspections, and 2 hours of support time per month.
 
-- Write code (pull requests)
-- Report bugs
-- Write documentation
-- Test new features
-- Spread the word
-- Train others
-- Translate to other languages
+## If you are a bouncy castle hirer
 
-### Current Sponsors
+Please consider using an inspector who stores their tests on Play-Test, or ask your inspector if they've considered it.
 
-- RPII (Recreational and Play Inspectors Ireland)
-- List any other sponsors
-- Sponsor acknowledgment policy
+## If you test bouncy castles
 
-### Reporting Security Issues
+Please consider trying the Play-Test platform out, or at least talking to your peers about the potential benefits to the industry of the existence of an open source, community-driven testing platform.
 
-- Responsible disclosure policy
-- Contact email for security issues
-- Expected response time
-- Hall of fame for security researchers
+## If you run your own testing database or web service
 
-## Visual elements:
+Please consider contributing to the Play-Test system or integrating it with your platform. Its open source license ensures that your contributions go towards the public good, and nothing about Play-Test stands in the way of other business from making money.
 
-- Sponsor logos
-- Sponsorship tier badges
-- GitHub stars/forks count
-- Contributor avatars (if available)
+**But remember - if you run a modified version of Play-Test for others to use, its AGPLv3 license means you must share your source code too.**
