@@ -31,7 +31,7 @@ The person maintaining the code and writing these words is [Stefan from Chobble]
 
 I hold myself to a high standard of transparency and independence which I think makes me well-placed to steward the play-test project.
 
-The original code for the system is heavily based on a Windows app by Spencer of [Elliotts Bouncy Castle Hire](https://www.elliottsbouncycastlehire.co.uk), a fellow nerd in the bouncy castle world. Without Spencer's RPII knowledge the system would never have happened.
+**The original code for the system is heavily based on a Windows app by Spencer of [Elliotts Bouncy Castle Hire](https://www.elliottsbouncycastlehire.co.uk), a fellow nerd in the bouncy castle world. Without Spencer's RPII knowledge the system would never have happened.**
 
 ### Who is sponsoring it?
 
