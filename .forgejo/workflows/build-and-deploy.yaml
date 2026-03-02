@@ -26,17 +26,14 @@ jobs:
           sparse-checkout: |
             .eleventy.js
             package.json
-            yarn.lock
+            bun.lock
+            bunfig.toml
             flake.nix
             flake.lock
             bin
+            scripts
+            packages
             src
-
-      # - name: Set Eleventy .cache
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: ${{ github.workspace }}/.image-cache
-      #     key: eleventy-img-cache
 
       - name: Copy template files to combined dir
         run: |
@@ -48,6 +45,7 @@ jobs:
             --exclude=".git" \
             --exclude="*.md" \
             --exclude="images" \
+            --exclude="landing-pages/*.html" \
             template/ \
             combined/
 
@@ -60,6 +58,8 @@ jobs:
             --exclude=".image-cache" \
             --exclude="bin/build" \
             --exclude="README.md" \
+            --exclude="package.json" \
+            --exclude="bun.lock" \
             source/ \
             combined/src/
 
@@ -71,17 +71,6 @@ jobs:
             --verbose \
             source/.image-cache/ \
             combined/.image-cache/
-
-      # - name: Copy Forgejo cache into combined dir
-      #   run: |
-      #     mkdir -p .image-cache
-      #     rsync \
-      #       --recursive \
-      #       --verbose \
-      #       --no-perms \
-      #       --chmod=ugo=rwX \
-      #       .image-cache/ \
-      #       combined/.image-cache/
 
       - name: Update site.json with secrets
         run: |
@@ -105,20 +94,6 @@ jobs:
             --flake ".#packages.x86_64-linux.site" \
             --no-nom
           mv result- ../result
-
-      # - name: Copy .image-cache out of result
-      #   run: |
-      #     rsync \
-      #       --recursive \
-      #       --delete \
-      #       result/.image-cache/ \
-      #       .image-cache/
-
-      # - name: Save .image-cache to Forgejo cache
-      #   uses: actions/cache/save@v4
-      #   with:
-      #     path: ${{ github.workspace }}/.image-cache
-      #     key: eleventy-img-cache
 
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v3
