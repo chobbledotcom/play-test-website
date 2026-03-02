@@ -1,6 +1,6 @@
 ---
 header_text: Thank You
-meta_description:
+meta_description: Thank you for contacting Play-Test
 meta_title: Thank You
 navigationParent: Contact
 no_index: true
