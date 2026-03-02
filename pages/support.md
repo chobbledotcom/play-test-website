@@ -21,7 +21,7 @@ You can donate to Chobble in the name of Play-Test's development through any of 
 
 ## If you want to pay to use the platform
 
-You can [contact Chobble](https://chobble.com/chobble/) to pay for an account on the Chobble instance of Play-Test, at [play-test.co.uk](https://play-test.co.uk). Prices are **£5/month for unlimited inspections**, paid annually.
+You can [contact Chobble](https://chobble.com/contact/) to pay for an account on the Chobble instance of Play-Test, at [play-test.co.uk](https://play-test.co.uk). Prices are **£5/month for unlimited inspections**, paid annually.
 
 You can also pay Chobble to host a full private instance for you or your team, at **£200 per month** for unlimited users, inspections, and 2 hours of support time per month.
 

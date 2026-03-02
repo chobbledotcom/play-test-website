@@ -23,7 +23,7 @@ The lead developer is [Stefan from Chobble CIC](https://chobble.com), a Communit
 
 You can register for **Chobble's hosted instance** of Play-Test at [play-test.co.uk/register](https://play-test.co.uk/register/). This version costs **£5 per month for unlimited test hosting**, payable to Chobble.
 
-If you're an RPII inspector, you can contact them to register for their hosted instance - public URL coming soon!
+If you're an RPII inspector, you can [contact the RPII](https://www.playinspectors.com) to register for their hosted instance.
 
 ## User features
 
@@ -48,7 +48,7 @@ Admin users are granted a few more abilities:
 - View all units
 - View all uploads
 - Impersonate users
-- Create badges / batches of batches
+- Create badges / batches of badges
 
 ## Technical features
 
