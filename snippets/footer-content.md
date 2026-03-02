@@ -2,4 +2,4 @@
 name: Footer
 ---
 
-©️ Play-Test / Chobble CIC 2025-2026
+©️ Play-Test / Chobble CIC 2026
