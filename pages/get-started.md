@@ -21,7 +21,7 @@ If you're **registered with the RPII** then you should get in touch with them to
 
 If you're **not an RPII inspector** you might like to register on Chobble's hosted instance of Play-Test, at [play-test.co.uk/register](https://play-test.co.uk/register/).
 
-**In either case, you might want to [click here to read about the various things you can with on the system](/features/).**
+**In either case, you might want to [click here to read about the various things you can do on the system](/features/).**
 
 <h2 id="other">I inspect some other type of play equipment</h2>
 
@@ -31,7 +31,7 @@ Because Play-Test is open source and released under the AGPLv3 license, you can 
 
 This model benefits the whole testing / inspection industry, by creating a single, open, transparent, and expandable system which anyone can use for a low cost.
 
-[Get in touch](/contact/) to learn how to help!
+[Get in touch](https://chobble.com/contact) to learn how to help!
 
 <h2 id="developer">I am a software developer</h2>
 
@@ -45,4 +45,4 @@ The repository includes plenty of tests and linters to help nudge your code into
 
 At the moment, the Play-Test system only exists in English. But it uses the built-in Rails internationalisation support basically everywhere - there are very few hard-coded strings.
 
-If you're able to help tranlate Play-Test into other languages and have experience with i18n strings, your help would be much appreciated.
+If you're able to help translate Play-Test into other languages and have experience with i18n strings, your help would be much appreciated.

@@ -1,8 +1,8 @@
 ---
 header_text: About the Play-Test BS EN 14960 inspection database
 subtitle: Open source inspection management for the play equipment industry
-meta_description: Learn about the play-test project, its open source philosophy,
-  and RPII sponsorship
+meta_description: Learn about Play-Test, the open source BS EN 14960 inspection
+  system built by Chobble CIC for the play equipment industry
 meta_title: About play-test
 eleventyNavigation:
   key: About
@@ -27,7 +27,9 @@ These all have their merits, but none are open, transparent systems that anyone 
 
 ### Who is building it?
 
-The person maintaining the code and writing these words is [Stefan from Chobble](https://chobble.com) - a software development company in Manchester, UK. I was the lead developer at [The Bouncy Castle Network](https://www.bouncycastlenetwork.com) for ten-ish years, and then a senior developer at [Bandcamp](https://bandcamp.com) for six-ish. I'm now freelancing - writing open source code for businesses across the UK and putting my know-how to good use as an ethical tech consultant.
+The person maintaining the code and writing these words is [Stefan from Chobble](https://chobble.com). I was the lead developer at [The Bouncy Castle Network](https://www.bouncycastlenetwork.com) for ten-ish years, and then a senior developer at [Bandcamp](https://bandcamp.com) for six-ish. I now run [Chobble CIC](https://chobble.com) - a **Community Interest Company** based in Prestwich, Greater Manchester - building open source software for small businesses, charities, and community organisations.
+
+As a CIC, Chobble is regulated to benefit the community rather than private shareholders. Any surplus is reinvested into open source development and cost reduction for community clients. I also donate 10% of proceeds to the [Against Malaria Foundation](https://www.againstmalaria.com/).
 
 I hold myself to a high standard of transparency and independence which I think makes me well-placed to steward the play-test project.
 

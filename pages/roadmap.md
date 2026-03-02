@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 5
 permalink: /roadmap/
 ---
-As of November 2025, the Play-Test system only supports testing against **BS EN 14960** tests for inflatable play equipment.
+The Play-Test system currently supports testing against **BS EN 14960** tests for inflatable play equipment.
 
 However, there are many other standards which the system could easily be adapted to - assessments are defined in a strict, modular way which means future standards can be supported by transcribing their specs into the system's configuration format. The next easiest examples would be:
 
