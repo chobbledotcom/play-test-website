@@ -15,9 +15,9 @@ eleventyNavigation:
 
 You can donate to Chobble in the name of Play-Test's development through any of the links below:
 
-- **OpenCollective**: opencollective.com/play-test
-- **LiberaPay**: liberapay.com/chobble
-- **Patreon**: patreon.com/c/Chobble
+- **[OpenCollective](https://opencollective.com/play-test)**: opencollective.com/play-test
+- **[LiberaPay](https://liberapay.com/chobble)**: liberapay.com/chobble
+- **[Patreon](https://patreon.com/c/Chobble)**: patreon.com/c/Chobble
 
 ## If you want to pay to use the platform
 

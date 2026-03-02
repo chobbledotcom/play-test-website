@@ -15,7 +15,7 @@ permalink: /
 
 The platform is **open source and available to all** ([here's the source code on Github](https://github.com/chobbledotcom/play-test)). Its development processes are collaborative, transparent, and independent.
 
-The lead developer is [Stefan from Chobble.com](https://chobble.com), formerly a developer at [The Bouncy Castle Network](https://www.bouncycastlenetwork.com) and [Bandcamp.com](https://bandcamp.com).
+The lead developer is [Stefan from Chobble CIC](https://chobble.com), a Community Interest Company in Greater Manchester. Stefan was formerly a developer at [The Bouncy Castle Network](https://www.bouncycastlenetwork.com) and [Bandcamp.com](https://bandcamp.com).
 
 ![Screenshot of the Play-Test system in the process of editing an inspection](/images/screenshot.png)
 
@@ -29,11 +29,14 @@ If you're an RPII inspector, you can contact them to register for their hosted i
 
 Play-Test is simple to use with a clear and obvious interface. Its main user-facing features are:
 
-- BS EN 14960 inspection logging
-- PDF reports and sharing
-- User login and password resets
+- BS EN 14960 inspection logging with seven assessment types
+- PDF reports with QR codes for easy sharing and verification
+- Draft inspections that can be edited before finalising
+- Built-in safety calculators for anchor points and user capacity
+- Pre-filled repeat inspections from previous data
+- Image uploads with automatic processing
 - CSV exports
-- Image uploads
+- Dark and light theme options
 
 ## Admin features
 
@@ -53,7 +56,8 @@ The platform has been designed to be very scalable and easy to develop on. It's 
 
 - S3 uploads
 - Docker containerisation
-- Nix Flake for repoducible dev environments
+- Nix Flake for reproducible dev environments
+- Full internationalisation (i18n) support
 - Sorbet type checking
 - [90%+ test coverage](https://coverage.play-test.co.uk)
 - Capybara tests

@@ -9,8 +9,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    name: Build & Deploy to Bunny CDN
+  setup:
+    name: Merge Repos
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this repo
@@ -28,10 +28,13 @@ jobs:
           sparse-checkout: |
             .eleventy.js
             package.json
-            package-lock.json
+            bun.lock
+            bunfig.toml
             flake.nix
             flake.lock
             bin
+            scripts
+            packages
             src
 
       - name: Copy template files to combined dir
@@ -44,6 +47,7 @@ jobs:
             --exclude=".git" \
             --exclude="*.md" \
             --exclude="images" \
+            --exclude="landing-pages/*.html" \
             template/ \
             combined/
 
@@ -54,6 +58,8 @@ jobs:
             --verbose \
             --exclude=".*" \
             --exclude="README.md" \
+            --exclude="package.json" \
+            --exclude="bun.lock" \
             source/ \
             combined/src/
 
@@ -66,10 +72,27 @@ jobs:
             's/"botpoison_public_key": null/"botpoison_public_key": "${{ secrets.BOTPOISON_PUBLIC_KEY }}"/g' \
             "combined/src/_data/config.json"
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Upload combined directory
+        uses: actions/upload-artifact@v4
         with:
-          node-version: 24
+          name: combined-files
+          path: combined/
+          retention-days: 1
+          include-hidden-files: true
+
+  build:
+    name: Build Site
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download combined directory
+        uses: actions/download-artifact@v4
+        with:
+          name: combined-files
+          path: combined
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -77,15 +100,15 @@ jobs:
           path: |
             combined/node_modules
             combined/.image-cache
-          key: ${{ runner.os }}
+          key: ${{ runner.os }}-bun-${{ hashFiles('combined/bun.lock') }}
           restore-keys: |
-            ${{ runner.os }}
+            ${{ runner.os }}-bun-
 
-      - name: Build with Node
+      - name: Build with Bun
         run: |
           cd combined
-          npm ci
-          npx @11ty/eleventy
+          bun install --frozen-lockfile
+          bun scripts/eleventy-build.js
           mkdir -p ../_site
           mv _site/* ../_site/
 
@@ -106,7 +129,7 @@ jobs:
   notify-failure:
     name: Notify on Failure
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [setup, build]
     if: failure()
     steps:
       - name: Send failure notification
@@ -114,4 +137,3 @@ jobs:
         with:
           url: 'https://ntfy.sh'
           topic: ${{ secrets.NTFY_TOPIC }}
-
